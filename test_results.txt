@@ -1,0 +1,109 @@
+======================================================================
+  BCG GenAI – GFC Financial Chatbot: Test Results
+======================================================================
+
+Test 1: ✅ PASS
+Query   : What is the total revenue?
+Response: Total Revenue for FY2025:
+  • Microsoft: $281,724 million
+  • Tesla: $94,827 million
+  • Apple: $416,161 million
+----------------------------------------------------------------------
+
+Test 2: ✅ PASS
+Query   : What is Microsoft's total revenue?
+Response: Microsoft's total revenue in FY2025 was $281,724 million. This increased by 14.9% compared to FY2024 ($245,122 million).
+----------------------------------------------------------------------
+
+Test 3: ✅ PASS
+Query   : How has net income changed?
+Response: Net Income for FY2025:
+  • Microsoft: $101,832 million (margin: 36.1%)
+  • Tesla: $3,855 million (margin: 4.1%)
+  • Apple: $112,010 million (margin: 26.9%)
+----------------------------------------------------------------------
+
+Test 4: ✅ PASS
+Query   : What is Tesla's net income?
+Response: Tesla's net income in FY2025 was $3,855 million (profit margin: 4.1%). Net income decreased by 46.1% vs FY2024 ($7,153 million).
+----------------------------------------------------------------------
+
+Test 5: ✅ PASS
+Query   : What are the total assets for Apple?
+Response: Apple's total assets in FY2025: $359,241 million. Total liabilities: $285,508 million (79.5% of assets). Shareholders' equity: $73,733 million.
+----------------------------------------------------------------------
+
+Test 6: ✅ PASS
+Query   : What is Microsoft's operating cash flow?
+Response: Microsoft's cash flow from operations in FY2025 was $136,162 million. This increased by 14.9% from FY2024 ($118,548 million).
+----------------------------------------------------------------------
+
+Test 7: ✅ PASS
+Query   : Give me a financial health summary of Tesla
+Response: === Tesla Financial Health Summary (FY2025) ===
+  Revenue:            $94,827 million
+  Net Income:         $3,855 million
+  Profit Margin:      4.1%
+  Total Assets:       $137,806 million
+  Debt/Asset Ratio:   39.9%
+  Operating CF:       $14,747 million
+  2-Year Rev Growth:  -2.0%
+  2-Year NI Growth:   -74.3%
+----------------------------------------------------------------------
+
+Test 8: ✅ PASS
+Query   : Compare all companies
+Response: === Company Comparison FY2025 ===
+
+Company                 Revenue      Net Income     Margin                OCF
+---------------------------------------------------------------------------
+Microsoft      $281,724 million $101,832 million      36.1%   $136,162 million
+Tesla           $94,827 million  $3,855 million       4.1%    $14,747 million
+Apple          $416,161 million $112,010 million      26.9%   $111,482 million
+
+💡 Microsoft leads in growth, Apple in revenue & OCF, Tesla faces margin pressure.
+----------------------------------------------------------------------
+
+Test 9: ✅ PASS
+Query   : What is the highest revenue company?
+Response: Total Revenue for FY2025:
+  • Microsoft: $281,724 million
+  • Tesla: $94,827 million
+  • Apple: $416,161 million
+----------------------------------------------------------------------
+
+Test 10: ✅ PASS
+Query   : What is Apple's financial health summary?
+Response: === Apple Financial Health Summary (FY2025) ===
+  Revenue:            $416,161 million
+  Net Income:         $112,010 million
+  Profit Margin:      26.9%
+  Total Assets:       $359,241 million
+  Debt/Asset Ratio:   79.5%
+  Operating CF:       $111,482 million
+  2-Year Rev Growth:  +8.6%
+  2-Year NI Growth:   +15.5%
+----------------------------------------------------------------------
+
+Test 11: ✅ PASS (graceful error handling)
+Query   : What is the weather today?
+Response: Sorry, I can only provide information on predefined financial queries. Type 'help' to see what I can answer.
+----------------------------------------------------------------------
+
+Test 12: ✅ PASS
+Query   : help
+Response: I can answer the following financial queries:
+  1. "What is the total revenue?" (add company name for specific data)
+  2. "How has net income changed?" (add company name for specific data)
+  3. "What are the total assets?" (add company name for specific data)
+  4. "What is the operating cash flow?" (add company name for specific data)
+  5. "Give me a financial health summary of [company]"
+  6. "Compare all companies"
+
+Available companies: Microsoft, Tesla, Apple
+Example: "What is Microsoft's total revenue?" 
+----------------------------------------------------------------------
+
+======================================================================
+Results: 12/12 tests passed
+======================================================================
